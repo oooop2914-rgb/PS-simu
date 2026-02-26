@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Juragan Rental PS</title>
-</head>
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./app.jsx";
 
-<body>
-
-<div id="root"></div>
-
-<script type="module" src="/src/app.jsx"></script>
-
-</body>
-</html>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <App />
+);
