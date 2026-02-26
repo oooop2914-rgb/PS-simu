@@ -10,6 +10,7 @@ import {
   Crown, Skull, Gift, Code, Sparkles, SendToBack, Repeat, CreditCard, Snowflake,
   Mail, MailOpen, Inbox
 } from 'lucide-react';
+import { auth, db } from "./firebase";
 
 // --- FIREBASE CLOUD SAVE INIT ---
 import { initializeApp } from 'firebase/app';
