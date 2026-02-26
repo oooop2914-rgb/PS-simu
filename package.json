@@ -1,11 +1,23 @@
 {
   "name": "ps-simulator",
-  "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "version": "1.0.0",
+
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "firebase": "10.12.2"
+    "firebase": "10.12.2",
+    "lucide-react": "0.378.0"
+  },
+
+  "devDependencies": {
+    "vite": "5.2.0",
+    "@vitejs/plugin-react": "4.2.1"
   }
 }
