@@ -32,7 +32,7 @@ try {
   app = initializeApp(firebaseConfig);
   auth = getAuth(app);
   db = getFirestore(app); // Kita tetap menggunakan Firestore
-  appId = "ps-simulator-server-1"; // ID server bebas
+  appId = "1:731826136011:web:dc12606443c190d6d60c4e"; // ID server bebas
 } catch (e) {
   console.error("Firebase init failed", e);
 }
