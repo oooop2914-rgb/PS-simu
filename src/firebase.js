@@ -1,17 +1,18 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp } from "firebase/app"
+import { getDatabase } from "firebase/database"
+import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAuLhUy2lzLGi5ywMnqoYHro8r0fqlWljs",
-  authDomain: "database-ps-ecf2b.firebaseapp.com",
-  projectId: "database-ps-ecf2b",
-  storageBucket: "database-ps-ecf2b.firebasestorage.app",
-  messagingSenderId: "731826136011",
-  appId: "1:731826136011:web:dcd306cc5727a727d60c4e"
+ apiKey: "AIzaSyAiRdNk_hd9iTRVyjLx0pu9upNQWHzSQlA",
+ authDomain: "ps-simulator-database.firebaseapp.com",
+ databaseURL: "https://ps-simulator-database-default-rtdb.asia-southeast1.firebasedatabase.app",
+ projectId: "ps-simulator-database",
+ storageBucket: "ps-simulator-database.firebasestorage.app",
+ messagingSenderId: "331614108947",
+ appId: "1:331614108947:web:1ccdfc348124aec951aee6"
 };
 
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig)
 
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+export const db = getDatabase(app)
+export const auth = getAuth(app)
