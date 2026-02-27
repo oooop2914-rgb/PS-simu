@@ -16,18 +16,27 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged, signOut } from 'firebase/auth';
 import { getFirestore, doc, setDoc, getDoc, collection, onSnapshot, addDoc, updateDoc, deleteDoc, arrayUnion } from 'firebase/firestore';
 
-let db, auth, appId;
+const firebaseConfig = {
+  apiKey: "AIzaSyAiRdNk_hd9iTRVyjLx0pu9upNQWHzSQlA",
+  authDomain: "ps-simulator-database.firebaseapp.com",
+  databaseURL: "https://ps-simulator-database-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "ps-simulator-database",
+  storageBucket: "ps-simulator-database.firebasestorage.app",
+  messagingSenderId: "331614108947",
+  appId: "1:331614108947:web:1ccdfc348124aec951aee6"
+};
+
+let app, auth, db, appId;
+
 try {
-  const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
-  if (firebaseConfig) {
-    const app = initializeApp(firebaseConfig);
-    auth = getAuth(app);
-    db = getFirestore(app);
-    appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-  }
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  db = getFirestore(app); // Kita tetap menggunakan Firestore
+  appId = "ps-simulator-server-1"; // ID server bebas
 } catch (e) {
   console.error("Firebase init failed", e);
 }
+
 
 // --- AKUN ADMIN KHUSUS & PASSWORD ---
 const ADMIN_ACCOUNTS = {
