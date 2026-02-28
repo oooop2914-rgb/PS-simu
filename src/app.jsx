@@ -17,13 +17,13 @@ import { getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged, 
 import { getFirestore, doc, setDoc, getDoc, collection, onSnapshot, addDoc, updateDoc, deleteDoc, arrayUnion } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAiRdNk_hd9iTRVyjLx0pu9upNQWHzSQlA",
-  authDomain: "ps-simulator-database.firebaseapp.com",
-  databaseURL: "https://ps-simulator-database-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "ps-simulator-database",
-  storageBucket: "ps-simulator-database.firebasestorage.app",
-  messagingSenderId: "331614108947",
-  appId: "1:331614108947:web:1ccdfc348124aec951aee6"
+  apiKey: "AIzaSyAuLhUy2lzLGi5ywMnqoYHro8r0fqlWljs",
+  authDomain: "database-ps-ecf2b.firebaseapp.com",
+  databaseURL: "https://database-ps-ecf2b-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "database-ps-ecf2b",
+  storageBucket: "database-ps-ecf2b.firebasestorage.app",
+  messagingSenderId: "731826136011",
+  appId: "1:731826136011:web:dcd306cc5727a727d60c4e"
 };
 
 let app, auth, db, appId;
