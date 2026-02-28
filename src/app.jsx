@@ -17,13 +17,12 @@ import { getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged, 
 import { getFirestore, doc, setDoc, getDoc, collection, onSnapshot, addDoc, updateDoc, deleteDoc, arrayUnion } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAiRdNk_hd9iTRVyjLx0pu9upNQWHzSQlA",
-  authDomain: "ps-simulator-database.firebaseapp.com",
-  databaseURL: "https://ps-simulator-database-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "ps-simulator-database",
-  storageBucket: "ps-simulator-database.firebasestorage.app",
-  messagingSenderId: "331614108947",
-  appId: "1:331614108947:web:1ccdfc348124aec951aee6"
+  apiKey: "AIzaSyCoCYVkOhu2QkSHEdh1hadm4EAwP4tZcr4",
+  authDomain: "kontol-5833b.firebaseapp.com",
+  projectId: "kontol-5833b",
+  storageBucket: "kontol-5833b.firebasestorage.app",
+  messagingSenderId: "626160457953",
+  appId: "1:626160457953:web:6ec05e747fd2036b697fa0"
 };
 
 let app, auth, db, appId;
@@ -32,7 +31,7 @@ try {
   app = initializeApp(firebaseConfig);
   auth = getAuth(app);
   db = getFirestore(app); // Kita tetap menggunakan Firestore
-  appId = "1:731826136011:web:dc12606443c190d6d60c4e"; // ID server bebas
+  appId = "1:626160457953:web:6ec05e747fd2036b697fa0"; // ID server bebas
 } catch (e) {
   console.error("Firebase init failed", e);
 }
