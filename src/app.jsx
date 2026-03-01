@@ -18,12 +18,11 @@ import { getFirestore, doc, setDoc, getDoc, collection, onSnapshot, addDoc, upda
 
 const firebaseConfig = {
   apiKey: "AIzaSyCoCYVkOhu2QkSHEdh1hadm4EAwP4tZcr4",
- authDomain: "kontol-5833b.firebaseapp.com",
- databaseURL: "https://kontol-5833b-default-rtdb.asia-southeast1.firebasedatabase.app",
- projectId: "kontol-5833b",
- storageBucket: "kontol-5833b.firebasestorage.app",
- messagingSenderId: "626160457953",
- appId: "1:626160457953:web:6ec05e747fd2036b697fa0"
+  authDomain: "kontol-5833b.firebaseapp.com",
+  projectId: "kontol-5833b",
+  storageBucket: "kontol-5833b.firebasestorage.app",
+  messagingSenderId: "626160457953",
+  appId: "1:626160457953:web:6ec05e747fd2036b697fa0"
 };
 
 let app, auth, db, appId;
