@@ -11,7 +11,7 @@ import {
 
 // --- KONFIGURASI BACKEND MYSQL ---
 // Ganti dengan IP VPS / Pterodactyl Anda jika sudah online
-const API_URL = "http://129.212.238.173:3000/api";
+const API_URL = "/api";
 
 const ADMIN_ACCOUNTS = {
   'ryo': 'pokemon12',
@@ -100,9 +100,9 @@ function LoginPage({ onLoginSuccess, showToast }) {
             });
             const data = await response.json();
             
-            if (!response.ok) throw new Error(data.error || "Terjadi kesalahan server");
+            if (!response.ok) throw new Error(data.error || "Error Wak Servernya");
             
-            showToast(`Selamat datang ${data.user.username}!`, "success");
+            showToast(`Selamat datang ${data.user.username}!`, "Berhasil Login Wak");
             onLoginSuccess(data.user, data.token);
         } catch (error) {
             showToast(error.message, "error");
@@ -117,7 +117,7 @@ function LoginPage({ onLoginSuccess, showToast }) {
            <div className="bg-[#0b1829]/80 p-8 rounded-3xl border border-cyan-500/20 backdrop-blur-xl z-10 w-full max-w-md shadow-[0_0_40px_rgba(6,182,212,0.1)] text-center relative">
               <Gamepad2 size={60} className="text-cyan-400 mx-auto mb-6 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" />
               <h1 className="text-3xl font-black bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-sky-400 mb-2">Juragan Rental PS</h1>
-              <p className="text-slate-400 text-sm mb-8">Server MySQL Edition</p>
+              <p className="text-slate-400 text-sm mb-8">Selamat Menjadi Juragan Yang Sukses</p>
               
               <form onSubmit={handleAuth} className="space-y-4">
                  <input 
@@ -136,7 +136,7 @@ function LoginPage({ onLoginSuccess, showToast }) {
                  />
                  
                  <button type="submit" disabled={isLoading} className={`w-full py-3.5 rounded-xl font-bold text-white shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 ${isRegistering ? 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 shadow-purple-500/30' : 'bg-gradient-to-r from-cyan-600 to-sky-600 hover:from-cyan-500 hover:to-sky-500 shadow-cyan-500/30'}`}>
-                    {isLoading ? <RefreshCw className="animate-spin" size={18}/> : (isRegistering ? 'Buat Akun Baru' : 'Masuk ke Server')}
+                    {isLoading ? <RefreshCw className="animate-spin" size={18}/> : (isRegistering ? 'Buat Akun Baru' : 'Mainkan')}
                  </button>
               </form>
 
@@ -146,7 +146,7 @@ function LoginPage({ onLoginSuccess, showToast }) {
                 </button>
               </div>
               <div className="mt-8 pt-6 border-t border-slate-800/50 text-center">
-                 <p className="text-xs text-slate-500">*Akun Admin gunakan Username & Password khusus</p>
+                 <p className="text-xs text-slate-500">*© Ps Simulator*</p>
               </div>
            </div>
         </div>
