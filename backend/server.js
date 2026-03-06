@@ -13,8 +13,8 @@ const JWT_SECRET = "ryoo_pokemon";
 // KONEKSI KE MYSQL (Ganti sesuai data VPS/Pterodactyl Anda)
 const db = mysql.createPool({
     host: 'localhost', // Atau IP VPS Anda
-    user: 'root',      // Username Database
-    password: 'ryoo_pokemon',      // Password Database
+    user: 'juraganps',      // Username Database
+    password: 'pokemon12',      // Password Database
     database: 'juragan_ps' // Nama Database
 });
 
