@@ -11,7 +11,7 @@ import {
 
 // --- KONFIGURASI BACKEND MYSQL ---
 // Ganti dengan IP VPS / Pterodactyl Anda jika sudah online
-const API_URL = "/api";
+const API_URL = "http://129.212.238.173:3000/api";
 
 const ADMIN_ACCOUNTS = {
   'ryo': 'pokemon12',
