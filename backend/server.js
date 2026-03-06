@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const JWT_SECRET = "rahasia_juragan_ps_vps_123";
+const JWT_SECRET = "ryoo_pokemon";
 
 // KONEKSI KE MYSQL (Ganti sesuai data VPS/Pterodactyl Anda)
 const db = mysql.createPool({
